@@ -1,0 +1,281 @@
+<!doctype html>
+<!
+Project 3
+Edward M Murray Jr
+MIU 1211
+BRONZE APP
+>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>The Recipe Vault</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<link href="css/style.css" rel="stylesheet" />
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+	<div data-role="page" id="home">
+	
+		<!--Page Header-->
+		<div data-role="header" data-theme="a" data-position="fixed">
+    		<h1>The Recipe Vault</h1>
+		</div>
+		
+		<div data-role="content" data-filter="true">
+		
+			<!--Add item feature call to action-->
+	    	<div id="feature1">
+		    	<a href="additem.html" Data-ajax="false" ><img id ="feature" img src="images/addrecipe.png"/></a>
+		    </div><br/>
+		    
+		    <!--Listview browse recipes (collapsable)-->
+		    <div data-role="collapsible" data-theme="b" data-content-theme="c" data-inset="false" data-collapsed="false">
+				<h2>Browse Recipes</h2>
+				<ul data-role="listview" data-filter="true">
+					<li><a href= "#category">
+			    		<h2>By Category</h2>
+			    		<p>Browse Recipes By Category</p>
+			    	</a></li>
+			    	<li><a href= "#error">
+				    	<h2>By Rating</h2>
+				    	<p>Browse Recipes By Rating</p>
+				    </a></li>
+					<li><a href= "#error">
+						<h2>By Name</h2>
+						<p>Browse Recipes By Name</p>
+					</a></li>
+					<li><a href= "#recentlyadded">
+						<h2>Recently Added</h2>
+						<p>Browse Recently Added Recipes</p>
+					</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--Footer Navigation Bar-->
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#about" data-icon="info">About</a></li>
+					<li><a href="#error" data-icon="search">Find Recipes</a></li><!--Link to some type of API or feed in the future-->
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<!--Category Page (Thumbnail Grid)-->
+	<div data-role="page" id="category" data-add-back-btn="true" data-position="fixed">
+	
+		<!--Page Header for Categories-->
+		<div data-role="header" data-theme="b">
+    		<h1>Categories</h1>
+		</div>
+		
+		<div data-role="content" >
+			<div class="ui-grid-c">
+				<div class="ui-block-a">
+					<img src="images/thumb/chicken.jpg" height="60" width="60" /><br/>
+					<a href="#error">Chicken</a>
+				</div>
+				<div class="ui-block-b">
+					<img src="images/thumb/beef.jpg" height="60" width="60" /><br/>
+					<a href="#error">Beef</a>
+				</div>
+				<div class="ui-block-c">
+					<img src="images/thumb/pork.jpg" height="60" width="60" /><br/>
+					<a href="#error">pork</a>
+				</div>
+				<div class="ui-block-d">
+					<img src="images/thumb/fish.jpg" height="60" width="60" /><br/>
+					<a href="#error">Fish</a>
+				</div>
+				<div class="ui-block-a">
+					<img src="images/thumb/spaghetti.jpg" height="60" width="60" /><br/>
+					<a href="#error">Spaghetti</a>
+				</div>
+				<div class="ui-block-b">
+					<img src="images/thumb/lasagna.jpg" height="60" width="60" /><br/>
+					<a href="#error">Lasagna</a>
+				</div>
+				<div class="ui-block-c">
+					<img src="images/thumb/pastasalad.jpg" height="60" width="60" /><br/>
+					<a href="#error">Pasta Salad</a>
+				</div>
+				<div class="ui-block-d">
+					<img src="images/thumb/ravioli.jpg" height="60" width="60" /><br/>
+					<a href="#error">Ravioli</a>
+				</div>
+				<div class="ui-block-a">
+					<img src="images/thumb/chili.jpg" height="60" width="60" /><br/>
+					<a href="#error">Chili</a>
+				</div>
+				<div class="ui-block-b">
+					<img src="images/thumb/chowder.jpg" height="60" width="60" /><br/>
+					<a href="#error">Chowder</a>
+				</div>
+				<div class="ui-block-c">
+					<img src="images/thumb/stew.jpg" height="60" width="60" /><br/>
+					<a href="#error">Stew</a>
+				</div>
+				<div class="ui-block-d">
+					<img src="images/thumb/seafood.jpg" height="60" width="60" /><br/>
+					<a href="#error">Seafood Soup</a>
+				</div>
+				<div class="ui-block-a">
+					<img src="images/thumb/cake.jpg" height="60" width="60" /><br/>
+					<a href="#error">Cake</a>
+				</div>
+				<div class="ui-block-b">
+					<img src="images/thumb/cookies.jpg" height="60" width="60" /><br/>
+					<a href="#error">Cookies</a>
+				</div>
+				<div class="ui-block-c">
+					<img src="images/thumb/pies.jpg" height="60" width="60" /><br/>
+					<a href="#error">Pies</a>
+				</div>
+				<div class="ui-block-d">
+					<img src="images/thumb/Mousse.jpg" height="60" width="60" /><br/>
+					<a href="#error">Mousse</a>
+				</div>
+			</div>
+		</div>
+		
+		<!--Footer Navigation Bar-->
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#about" data-icon="info">About</a></li>
+					<li><a href="#error" data-icon="search">Find Recipes</a></li><!--Link to some type of API or feed in the future-->
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<!--Recently Added (Newsfeed, Makeup for Project 2)-->
+	<div data-role="page" id="recentlyadded" data-add-back-btn="true" data-position="fixed">
+	
+		<!--Page Header for Recently Added-->
+		<div data-role="header" data-theme="b">
+    		<h1>Recent Recipes</h1>
+		</div>
+		
+		<div data-role="content" >
+			<div class="ui-grid-solo">
+				<div class="ui-block-a">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">Recently Added</li>
+						<li><a href="#error">
+						<img src="images/thumb/chicken.jpg" height="50" width="50" />
+                        <h2> Chicken Parmesan<p>Added on 11/5/12.</p></h2>
+                        </a></li>
+						<li><a href="#error">
+						<img src="images/thumb/beef.jpg" height="50" width="50" />
+                        <h2> Beef Brisket<p>Added on 11/3/12.</p></h2>
+                        </a></li>
+						<li><a href="#error">
+						<img src="images/thumb/pork.jpg" height="50" width="50" />
+                        <h2> Pork Tenderloin<p>Added on 11/2/12.</p></h2>
+                        </a></li>
+						<li><a href="#error">
+						<img src="images/thumb/fish.jpg" height="50" width="50" />
+                        <h2> Blackened Mahi<p>Added on 11/1/12.</p></h2>
+                        </a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<!--Footer Navigation Bar-->
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#about" data-icon="info">About</a></li>
+					<li><a href="#error" data-icon="search">Find Recipes</a></li><!--Link to some type of API or feed in the future-->
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<!--Error Page-->
+	<div data-role="page" id="error" data-add-back-btn="true" data-filter="true">
+		<div data-role="header" data-theme="b" data-position="fixed">
+    		<h1>Error404</h1>
+		</div>
+		
+		<div data-role="content">
+			<div id="feature1">
+		    	<a href="additem.html" Data-ajax="false" ><img id ="feature" img src="images/addrecipe.png"/></a>
+		    </div><br/>
+		    <h2>This page is under construction</h2>
+		</div>
+	
+		<!--Footer Navigation Bar-->
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#about" data-icon="info">About</a></li>
+					<li><a href="#error" data-icon="search">Find Recipes</a></li><!--Link to some type of API or feed in the future-->
+				</ul>
+			</div>
+		</div>
+	</div>
+		
+	<!--About Page-->
+	<div data-role="page" id="about" data-add-back-btn="true" data-filter="true">
+	
+		<!--Page Header for About-->
+		<div data-role="header" data-theme="b" data-position="fixed">
+    		<h1>About</h1>
+		</div>
+		
+		<div data-role="content">
+		
+		<!--About Me-->
+		<h2>About the developer:</h2>
+		<p>Prior to entering this degree program I had zero experience with JavaScript, or JQuery/JQuery mobile. I work in an interesting industry that not a lot of people know about called affiliate marketing. Affiliate marketing is a form of internet marking. Most of the marketing we do is lead generation based. Because of the industry I work in I have had the chance to deal with some HTML and CSS. I have never had to create my own however, most of my experience was simply manipulating and refactoring the code that was already written by our in house developer.</p>
+		
+		<!--GitHub Master Link-->
+		<h4>GitHub Master: <a href="https://github.com/ampedej/MIU-Project-2">Click Here</a></h4>
+		
+		<!--Gold App Git Link-->
+		<h4>GitHub Gold App: <a href="http://ampedej.github.com/MIU-Project-2/GOLD/index.html">Click Here</a></h4>
+		
+		<!--Bronze App Git Link-->
+		<h4>GitHub Bronze App: <a href="http://ampedej.github.com/MIU-Project-2/BRONZE/index.html">Click Here</a></h4>
+		
+		<!--Footer Navigation Bar-->
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#about" data-icon="info">About</a></li>
+					<li><a href="#error" data-icon="search">Find Recipes</a></li><!--Link to some type of API or feed in the future-->
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- JavaScript -->	    
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+</body>
+</html>
