@@ -29,10 +29,10 @@ BRONZE APP
 
 </head>
 <body>
-	<div data-role="page" id="home">
+	<div data-role="page" id="home" data-theme="d">
 	
 		<!--Page Header-->
-		<div data-role="header" data-theme="a" data-position="fixed">
+		<div data-role="header" data-theme="d" data-position="fixed">
     		<h1>The Recipe Vault</h1>
 		</div>
 		
@@ -44,7 +44,7 @@ BRONZE APP
 		    </div><br/>
 		    
 		    <!--Listview browse recipes (collapsable)-->
-		    <div data-role="collapsible" data-theme="b" data-content-theme="c" data-inset="false" data-collapsed="false">
+		    <div data-role="collapsible" data-theme="d" data-content-theme="c" data-inset="false" data-collapsed="false">
 				<h2>Browse Recipes</h2>
 				<ul data-role="listview" data-filter="true">
 					<li><a href= "#category">
@@ -80,14 +80,15 @@ BRONZE APP
 	</div>
 	
 	<!--Category Page (Thumbnail Grid)-->
-	<div data-role="page" id="category" data-add-back-btn="true" data-position="fixed">
+	<div data-role="page" id="category" data-theme="d" data-add-back-btn="true" data-position="fixed">
 	
 		<!--Page Header for Categories-->
-		<div data-role="header" data-theme="b">
-    		<h1>Categories</h1>
+		<div data-role="header" data-theme="d">
+    		<h1>The Recipe Vault</h1>
 		</div>
 		
 		<div data-role="content" >
+        <h3>Categories</h3>
 			<div class="ui-grid-c">
 				<div class="ui-block-a">
 					<img src="images/thumb/chicken.jpg" height="60" width="60" /><br/>
@@ -169,14 +170,15 @@ BRONZE APP
 	</div>
 	
 	<!--Recently Added (Newsfeed, Makeup for Project 2)-->
-	<div data-role="page" id="recentlyadded" data-add-back-btn="true" data-position="fixed">
+	<div data-role="page" id="recentlyadded" data-theme="d" data-add-back-btn="true" data-position="fixed">
 	
 		<!--Page Header for Recently Added-->
-		<div data-role="header" data-theme="b">
-    		<h1>Recent Recipes</h1>
+		<div data-role="header" data-theme="d">
+    		<h1>The Recipe Vault</h1>
 		</div>
 		
 		<div data-role="content" >
+        <h3>Recent Recipes</h3>
 			<div class="ui-grid-solo">
 				<div class="ui-block-a">
 					<ul data-role="listview" data-inset="true">
@@ -215,12 +217,13 @@ BRONZE APP
 	</div>
 	
 	<!--Error Page-->
-	<div data-role="page" id="error" data-add-back-btn="true" data-filter="true">
-		<div data-role="header" data-theme="b" data-position="fixed">
-    		<h1>Error404</h1>
+	<div data-role="page" id="error" data-theme="d" data-add-back-btn="true" data-filter="true">
+		<div data-role="header" data-theme="d" data-position="fixed">
+    		<h1>The Recipe Vault</h1>
 		</div>
 		
-		<div data-role="content">
+		<div data-role="content" >
+        <h3>ERROR 404</h3>
 			<div id="feature1">
 		    	<a href="additem.html" Data-ajax="false" ><img id ="feature" img src="images/addrecipe.png"/></a>
 		    </div><br/>
@@ -243,24 +246,24 @@ BRONZE APP
 	<div data-role="page" id="about" data-add-back-btn="true" data-filter="true">
 	
 		<!--Page Header for About-->
-		<div data-role="header" data-theme="b" data-position="fixed">
-    		<h1>About</h1>
+		<div data-role="header" data-theme="d" data-position="fixed">
+    		<h1>The Recipe Vault</h1>
 		</div>
 		
-		<div data-role="content">
+		<div data-role="content" >
 		
 		<!--About Me-->
 		<h2>About the developer:</h2>
 		<p>Prior to entering this degree program I had zero experience with JavaScript, or JQuery/JQuery mobile. I work in an interesting industry that not a lot of people know about called affiliate marketing. Affiliate marketing is a form of internet marking. Most of the marketing we do is lead generation based. Because of the industry I work in I have had the chance to deal with some HTML and CSS. I have never had to create my own however, most of my experience was simply manipulating and refactoring the code that was already written by our in house developer.</p>
 		
 		<!--GitHub Master Link-->
-		<h4>GitHub Master: <a href="https://github.com/ampedej/MIU-Project-2">Click Here</a></h4>
+		<h4>GitHub Master: <a href="https://github.com/ampedej/MIU-Project4">Click Here</a></h4>
 		
 		<!--Gold App Git Link-->
-		<h4>GitHub Gold App: <a href="http://ampedej.github.com/MIU-Project-2/GOLD/index.html">Click Here</a></h4>
+		<h4>GitHub Gold App: <a href="http://ampedej.github.com/MIU-Project4/GOLD/index.html">Click Here</a></h4>
 		
 		<!--Bronze App Git Link-->
-		<h4>GitHub Bronze App: <a href="http://ampedej.github.com/MIU-Project-2/BRONZE/index.html">Click Here</a></h4>
+		<h4>GitHub Bronze App: <a href="http://ampedej.github.com/MIU-Project4/BRONZE/index.html">Click Here</a></h4>
 		
 		<!--Footer Navigation Bar-->
 		<div data-role="footer" data-position="fixed">

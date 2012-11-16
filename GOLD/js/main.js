@@ -35,17 +35,17 @@ $('#additem').on('pageinit', function(){
 		}
 	}
 	
-	function storeData(data){
+	function storeData(key){
 		var id					= Math.floor(Math.random()*100000001);
 		getSelectedRadio()
 		var item				= {};
-			item.rname 			= ["Recipe Name:", $('input[rname]').val];
-			item.dateadded 		= ["Date Added:", $('dateadded').value];
-			item.rating 		= ["Rating:", $('rating').value];
+			item.rname 			= ["Recipe Name:", $('#rname').val()];
+			item.dateadded 		= ["Date Added:", $('#dateadded').val()];
+			item.rating 		= ["Rating:", $('#rating').val()];
 			item.category 		= ["Category:", categoryValue];
-			item.rtype 			= ["Recipe Type:", $('rtype').value];
-			item.ringredients 	= ["Recipe Ingredients:", $('ringredients').value];
-			item.rdirections 	= ["Recipe Directions:", $('rdirections').value];
+			item.rtype 			= ["Recipe Type:", $('#rtype').val()];
+			item.ringredients 	= ["Recipe Ingredients:", $('#ringredients').val()];
+			item.rdirections 	= ["Recipe Directions:", $('#rdirections').val()];
 			
 		//Save into local storage
 		localStorage.setItem(id, JSON.stringify(item));
